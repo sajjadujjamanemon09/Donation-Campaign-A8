@@ -1,9 +1,10 @@
+import Banner from "../../components/Header/NavBar/Banner";
 
 
 const Home = () => {
     return (
         <div>
-            Home
+            <Banner></Banner>
         </div>
     );
 };
