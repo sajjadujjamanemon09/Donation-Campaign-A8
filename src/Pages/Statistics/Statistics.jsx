@@ -1,28 +1,33 @@
-import { PieChart, Pie, Cell } from 'recharts';
+import React from 'react';
+import Chart from 'react-apexcharts';
 
 const Statistics = () => {
-  const data = [
-    { name: 'total', value: 700, fill: '#FF444A' },
-    { name: 'added', value: 300, fill: '#00C49F' },
-  ];
+  const totalDonations = 12;
+  const collectDonations = JSON.parse(localStorage.getItem('donate'))?.length || 0;
+
+  const chartData = [collectDonations, totalDonations - collectDonations];
+
+  const options = {
+    labels: ['Your Donation', 'Total Donation'],
+    colors: ['#00C49F', '#FF444A'],
+    legend: {
+      position: 'bottom',
+    },
+  };
 
   return (
-    <div className='mt-20'>
-      <div className='flex flex-col items-center'>
-        <PieChart width={300} height={300}>
-          <Pie data={data} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={80}>
-            {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={entry.fill} />
-            ))}
-          </Pie>
-        </PieChart>
+    <React.Fragment>
+      <div className='flex items-center justify-center h-[100vh] w-full'>
+        <Chart
+          type='pie'
+          width={330}
+          height={2500}
+          series={chartData}
+          options={options}
+        />
       </div>
-      <div className='flex justify-center items-center gap-10 font-medium'>
-        <h2 className='text-center'>Your Donation</h2>
-        <h2 className='text-center'>Total Donation</h2>
-      </div>
-    </div>
+    </React.Fragment>
   );
-};
+}
 
 export default Statistics;

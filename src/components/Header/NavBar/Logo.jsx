@@ -2,7 +2,7 @@
 const Logo = () => {
     return (
         <div className="flex justify-center">
-            <img src="/src/assets/Resources/Logo.png" alt="" />
+            <img src="https://i.ibb.co/p3bD47Z/Logo.png" alt="" />
         </div>
     );
 };

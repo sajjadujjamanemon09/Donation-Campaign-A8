@@ -6,10 +6,10 @@ const NavBar = () => {
     <div>
       <nav className="md:flex justify-between items-center pt-7 px-5">
         <Logo></Logo>
-        <div className="pt-10">
+        <div className="pt-10 md:pt-0">
           <ul className="md:flex gap-12 text-2xl">
 
-           <div className="flex justify-center pb-2">
+           <div className="flex justify-center items-center pb-2">
            <li>
               <NavLink
                 to="/"

@@ -1,4 +1,4 @@
-Within this project, I've categorized donations into four distinct types: Health, Food, Clothing, and Education. To organize and navigate through this project, I've set up four key paths: /home, /donation, /statistics, and /donations.id.
+Within this project, I've categorized donations into four distinct types: Health, Food, Clothing, and Education. To organize and navigate through this project, I've set up four paths: /home, /donation, /statistics, and /donations.id.
 
 Here are the project features listed:
 
