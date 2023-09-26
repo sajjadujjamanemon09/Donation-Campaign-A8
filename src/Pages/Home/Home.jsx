@@ -10,7 +10,7 @@ const Home = () => {
     // console.log(donations);
 
     return (
-        <div>
+        <div className="px-4">
         <Banner></Banner>
         <Donations donations ={donations}></Donations>
         </div>

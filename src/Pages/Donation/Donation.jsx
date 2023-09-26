@@ -35,7 +35,9 @@ const Donation = () => {
                     </div>
                    
                     <div className="flex justify-center my-9">
-                    <button onClick={() =>setIsShow(!isShow)} className="btn bg-red-500 text-white">{isShow ?"See Less" : "See more"}</button>
+                   {
+                    donations.length > 4 &&  <button onClick={() =>setIsShow(!isShow)} className="btn bg-red-500 text-white">{isShow ? "See Less" : "See more"}</button>
+                   }
                     </div>
                 </div>
             }

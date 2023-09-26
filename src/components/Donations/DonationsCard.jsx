@@ -8,12 +8,12 @@ const DonationsCard = ({ donation }) => {
   return (
    <Link to={`donations/${id}`}>
     <div>
-    <div className="card card-compact bg-base-100 shadow-xl"
+    <div className="card w-full h-64 card-compact bg-base-100 shadow-xl"
     style={{backgroundColor: card_bg_color, color: text_color }}>
-  <figure><img src={picture} alt="" /></figure>
-  <div className="card-body">
+  <figure><img className="w-full" src={picture} alt="" /></figure>
+  <div className="card-body h-1/3">
     <p className="rounded w-20 text-center" style={{backgroundColor:category_bg_color}}>{category}</p>
-    <h2 className="text-2xl font-semibold">{title}</h2>
+    <h2 className="text-xl font-semibold pb-4">{title}</h2>
   </div>
 </div>
     </div>
