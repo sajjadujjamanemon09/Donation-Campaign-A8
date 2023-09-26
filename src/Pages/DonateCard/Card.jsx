@@ -15,7 +15,7 @@ const Card = ({donation}) => {
         if(!donateItem){
             addedDonateArray.push(donation)
             localStorage.setItem('donate', JSON.stringify(addedDonateArray))
-            toast("Thanks ! We received your Donation.");
+            toast("Thanks ! We received your Donation Successfully.");
         }
         else{
 
